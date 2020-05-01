@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="Map" />
+
+        <item
+            android:id="@+id/restaurants"
+            android:icon="@mipmap/ic_restaurant"
+            android:title="Restaurants" />
+        <item
+            android:id="@+id/school"
+            android:icon="@drawable/ic_local_library_black_24dp"
+            android:title="Schools" />
+        <item
+            android:id="@+id/mall"
+            android:icon="@mipmap/ic_shopping"
+            android:title="Shopping Mall" />
+        <item
+            android:id="@+id/atm"
+            android:icon="@mipmap/ic_atm"
+            android:title="ATM" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/get_weather"
+                android:icon="@drawable/ic_wb_sunny_black_24dp"
+                android:title="Weather" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_screen_share_black_24dp"
+                android:title="FeedBack" />
+        </menu>
+    </item>
+
+</menu>

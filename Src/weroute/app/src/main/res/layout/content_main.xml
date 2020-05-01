@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="obid.weroute.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+    <include
+        android:id="@+id/credits"
+        layout="@layout/credits"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context=".MainActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+      />
+
+    <ListView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:id="@+id/marker_details"
+        />
+
+</android.support.constraint.ConstraintLayout>
